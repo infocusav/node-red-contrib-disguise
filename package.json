@@ -1,0 +1,29 @@
+{
+  "name": "node-red-contrib-disguise",
+  "version": "0.0.1",
+  "description": "A collection of node for API calls from DISGUISE Media Servers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "node-red": {
+    "version": ">=4.0.9",
+    "nodes": {
+      "GH-API": "DISGUISE-API.js"
+    }
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/infocusav/node-red-contrib-greenhippo.git"
+  },
+  "keywords": [
+    "DISGUISE",
+    "node-red",
+    "API"
+  ],
+  "author": "infocusav",
+  "license": "MIT"
+}
