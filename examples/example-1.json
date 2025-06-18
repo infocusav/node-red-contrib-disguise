@@ -1,0 +1,111 @@
+[
+    {
+        "id": "d8046ac1ee2bd3cd",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "89300937adbd4ac9",
+        "type": "DISGUISE-API",
+        "z": "d8046ac1ee2bd3cd",
+        "name": "",
+        "ipAddress": "127.0.0.1",
+        "port": "80",
+        "x": 640,
+        "y": 320,
+        "wires": [
+            [
+                "a48ae30b29320fd0"
+            ],
+            [
+                "e9e7acd7b637b1e4"
+            ],
+            [
+                "18bc3b7d16c96520"
+            ]
+        ]
+    },
+    {
+        "id": "b53ad3557242b59c",
+        "type": "inject",
+        "z": "d8046ac1ee2bd3cd",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 360,
+        "y": 320,
+        "wires": [
+            [
+                "89300937adbd4ac9"
+            ]
+        ]
+    },
+    {
+        "id": "a48ae30b29320fd0",
+        "type": "debug",
+        "z": "d8046ac1ee2bd3cd",
+        "name": "Full server stauts JSON reponse",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 910,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "e9e7acd7b637b1e4",
+        "type": "debug",
+        "z": "d8046ac1ee2bd3cd",
+        "name": "averageFPS",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 850,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "18bc3b7d16c96520",
+        "type": "debug",
+        "z": "d8046ac1ee2bd3cd",
+        "name": "Machine Name",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 860,
+        "y": 380,
+        "wires": []
+    }
+]

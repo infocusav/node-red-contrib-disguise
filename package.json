@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-disguise",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A collection of node for API calls from DISGUISE Media Servers",
   "main": "index.js",
   "scripts": {
